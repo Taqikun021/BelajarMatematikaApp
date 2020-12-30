@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_kalkulator"
+        android:icon="@drawable/ic_baseline_calculate_24"
+        android:title="@string/kalkulator" />
+
+    <item
+        android:id="@+id/navigation_tes"
+        android:icon="@drawable/ic_baseline_ballot_24"
+        android:title="@string/tes" />
+
+    <item
+        android:id="@+id/navigation_materi"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="@string/materi" />
+
+    <item
+        android:id="@+id/navigation_bank_soal"
+        android:icon="@drawable/ic_baseline_fact_check_24"
+        android:title="@string/bank_soal"/>
+
+    <item
+        android:id="@+id/navigation_profil"
+        android:icon="@drawable/ic_baseline_account_box_24"
+        android:title="@string/profil"/>
+</menu>

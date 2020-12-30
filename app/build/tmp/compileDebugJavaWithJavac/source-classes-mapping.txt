@@ -1,0 +1,2 @@
+xyz/tqydn/math/BuildConfig.java
+ xyz.tqydn.math.BuildConfig

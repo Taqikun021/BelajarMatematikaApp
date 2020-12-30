@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_materi">
+
+    <fragment
+        android:id="@+id/navigation_kalkulator"
+        android:name="xyz.tqydn.math.KalkulatorFragment"
+        android:label="Kalkulator"
+        tools:layout="@layout/fragment_kalkulator"/>
+
+    <fragment
+        android:id="@+id/navigation_tes"
+        android:name="xyz.tqydn.math.TesFragment"
+        android:label="Tes"
+        tools:layout="@layout/fragment_tes"/>
+
+    <fragment
+        android:id="@+id/navigation_materi"
+        android:name="xyz.tqydn.math.MateriFragment"
+        android:label="Materi"
+        tools:layout="@layout/fragment_materi"/>
+
+    <fragment
+        android:id="@+id/navigation_bank_soal"
+        android:name="xyz.tqydn.math.BankSoalFragment"
+        android:label="Bank Soal"
+        tools:layout="@layout/fragment_bank_soal"/>
+
+    <fragment
+        android:id="@+id/navigation_profil"
+        android:name="xyz.tqydn.math.ProfilFragment"
+        android:label="Profil"
+        tools:layout="@layout/fragment_profil"/>
+</navigation>
