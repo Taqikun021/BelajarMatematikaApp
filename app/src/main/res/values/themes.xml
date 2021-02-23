@@ -22,6 +22,10 @@
         <item name="tint">@android:color/darker_gray</item>
     </style>
 
+    <style name="Widget.MaterialComponents.ShapeableImageView." parent="">
+        <item name="tint">?android:attr/textColorPrimary</item>
+    </style>
+
     <style name="Widget.AppCompat.ImageButton" parent="">
         <item name="tint">@color/black</item>
         <item name="backgroundTint">@android:color/transparent</item>
