@@ -4,17 +4,7 @@
             "outputFile": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/taqiyudin/.gradle/caches/transforms-2/files-2.1/79ee559483d346866425453a88a27286/core-1.3.2/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/taqiyudin/.gradle/caches/transforms-2/files-2.1/f1f33b62267c75a6f99331b460a092b0/appcompat-1.2.0/res/values-v16/values-v16.xml",
+                    "source": "/home/taqiyudin/.gradle/caches/transforms-2/files-2.1/2ce7175a607f1aae5fbba536e8c002c1/appcompat-1.2.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/taqiyudin/.gradle/caches/transforms-2/files-2.1/0288a8aab631773614f54c3f4d4ca2e2/core-1.3.2/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

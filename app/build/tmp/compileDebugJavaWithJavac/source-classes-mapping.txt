@@ -1,2 +1,20 @@
+xyz/tqydn/math/databinding/FragmentHistoryActionListDialogItemBinding.java
+ xyz.tqydn.math.databinding.FragmentHistoryActionListDialogItemBinding
+xyz/tqydn/math/databinding/FragmentBankSoalBinding.java
+ xyz.tqydn.math.databinding.FragmentBankSoalBinding
+xyz/tqydn/math/databinding/FragmentProfilBinding.java
+ xyz.tqydn.math.databinding.FragmentProfilBinding
+xyz/tqydn/math/databinding/FragmentMateriBinding.java
+ xyz.tqydn.math.databinding.FragmentMateriBinding
+xyz/tqydn/math/databinding/FragmentKalkulatorBinding.java
+ xyz.tqydn.math.databinding.FragmentKalkulatorBinding
+xyz/tqydn/math/databinding/ActivitySplashScreenBinding.java
+ xyz.tqydn.math.databinding.ActivitySplashScreenBinding
+xyz/tqydn/math/databinding/ActivityMainBinding.java
+ xyz.tqydn.math.databinding.ActivityMainBinding
+xyz/tqydn/math/databinding/FragmentHistoryActionListDialogBinding.java
+ xyz.tqydn.math.databinding.FragmentHistoryActionListDialogBinding
 xyz/tqydn/math/BuildConfig.java
  xyz.tqydn.math.BuildConfig
+xyz/tqydn/math/databinding/FragmentTesBinding.java
+ xyz.tqydn.math.databinding.FragmentTesBinding

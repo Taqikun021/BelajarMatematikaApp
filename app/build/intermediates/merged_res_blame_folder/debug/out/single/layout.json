@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_materi.xml",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_materi.xml"
+    },
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_history_action_list_dialog.xml",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_history_action_list_dialog.xml"
+    },
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_kalkulator.xml",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_kalkulator.xml"
+    },
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_history_action_list_dialog_item.xml",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_history_action_list_dialog_item.xml"
+    },
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash_screen.xml",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_bank_soal.xml",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_bank_soal.xml"
+    },
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profil.xml",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_profil.xml"
+    },
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_tes.xml",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_tes.xml"
+    }
+]

@@ -1292,6 +1292,8 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen list_item_spacing
+dimen list_item_spacing_half
 dimen material_emphasis_disabled
 dimen material_emphasis_high_type
 dimen material_emphasis_medium
@@ -1599,6 +1601,7 @@ drawable ic_baseline_history_24
 drawable ic_baseline_menu_book_24
 drawable ic_baseline_search_24
 drawable ic_dashboard_black_24dp
+drawable ic_delete_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1607,6 +1610,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
+drawable ic_profil
+drawable ic_splash
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1691,6 +1696,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id action
 id action0
 id action_bar
 id action_bar_activity_content
@@ -1746,6 +1752,7 @@ id button_addition
 id button_backspace
 id button_c
 id button_ce
+id button_clear_history
 id button_comma
 id button_division
 id button_equal
@@ -1863,7 +1870,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
 id info
 id invisible
 id italic
@@ -1871,6 +1877,7 @@ id item_touch_helper_previous_elevation
 id judulMateri
 id jumpToEnd
 id jumpToStart
+id label_history
 id labeled
 id largeLabel
 id layout
@@ -1878,12 +1885,14 @@ id left
 id line1
 id line3
 id linear
+id list
 id listBankSoal
 id listMateri
 id listMode
 id list_item
 id masked
 id media_actions
+id menu_item_history
 id message
 id middle
 id mini
@@ -1960,11 +1969,13 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id result
 id reverseSawtooth
 id right
 id right_icon
 id right_side
 id rounded
+id row
 id row_index_key
 id save_non_transition_alpha
 id save_overlay_view
@@ -2160,6 +2171,8 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_bank_soal
+layout fragment_history_action_list_dialog
+layout fragment_history_action_list_dialog_item
 layout fragment_kalkulator
 layout fragment_materi
 layout fragment_profil
@@ -2230,6 +2243,8 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation mobile_navigation
 plurals mtrl_badge_content_description
+string _100
+string _9_2_1_10
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2274,6 +2289,7 @@ string chip_text
 string clear_history
 string clear_text_end_icon_content_description
 string comma
+string daftar_materi
 string deskripsi_materi
 string division
 string equal
@@ -3060,6 +3076,7 @@ style Widget_MaterialComponents_PopupMenu_ContextMenu
 style Widget_MaterialComponents_PopupMenu_ListPopupWindow
 style Widget_MaterialComponents_PopupMenu_Overflow
 style Widget_MaterialComponents_ShapeableImageView
+style Widget_MaterialComponents_ShapeableImageView_
 style Widget_MaterialComponents_Slider
 style Widget_MaterialComponents_Snackbar
 style Widget_MaterialComponents_Snackbar_FullWidth
