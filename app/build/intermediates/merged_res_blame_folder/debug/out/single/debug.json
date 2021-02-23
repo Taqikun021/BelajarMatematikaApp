@@ -32,12 +32,12 @@
         "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_baseline_fact_check_24.png"
     },
     {
-        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_ballot_24.png.flat",
-        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_ballot_24.png"
-    },
-    {
         "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/layout_fragment_bank_soal.xml.flat",
         "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_bank_soal.xml"
+    },
+    {
+        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_ballot_24.png.flat",
+        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_ballot_24.png"
     },
     {
         "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_baseline_ballot_24.png.flat",
@@ -70,10 +70,6 @@
     {
         "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/drawable_ic_home_black_24dp.xml.flat",
         "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/drawable/ic_home_black_24dp.xml"
-    },
-    {
-        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/layout_fragment_history_action_list_dialog.xml.flat",
-        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_history_action_list_dialog.xml"
     },
     {
         "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -198,10 +194,6 @@
     {
         "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
         "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/layout_fragment_history_action_list_dialog_item.xml.flat",
-        "source": "/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/res/layout/fragment_history_action_list_dialog_item.xml"
     },
     {
         "merged": "/home/taqiyudin/AndroidStudioProjects/Math/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_splash.png.flat",

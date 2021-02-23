@@ -5,14 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.GridLayout;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.Guideline;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,7 +20,7 @@ import xyz.tqydn.math.R;
 
 public final class FragmentKalkulatorBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
   public final Button button0;
@@ -78,21 +77,6 @@ public final class FragmentKalkulatorBinding implements ViewBinding {
   public final Button buttonFraction;
 
   @NonNull
-  public final Button buttonMemoryAdd;
-
-  @NonNull
-  public final Button buttonMemoryClear;
-
-  @NonNull
-  public final Button buttonMemoryRecall;
-
-  @NonNull
-  public final Button buttonMemoryStore;
-
-  @NonNull
-  public final Button buttonMemorySubtract;
-
-  @NonNull
   public final Button buttonMultiplication;
 
   @NonNull
@@ -111,44 +95,32 @@ public final class FragmentKalkulatorBinding implements ViewBinding {
   public final Button buttonSubtraction;
 
   @NonNull
-  public final GridLayout gridLayout1;
-
-  @NonNull
   public final GridLayout gridLayout2;
-
-  @NonNull
-  public final Guideline guideline1;
 
   @NonNull
   public final Guideline guideline2;
 
   @NonNull
-  public final ImageButton menuItemHistory;
-
-  @NonNull
   public final AppCompatTextView numberCurrent;
 
   @NonNull
-  public final TextView numberHistory;
+  public final AppCompatTextView numberHistory;
 
   @NonNull
   public final TextView tv;
 
-  private FragmentKalkulatorBinding(@NonNull FrameLayout rootView, @NonNull Button button0,
+  private FragmentKalkulatorBinding(@NonNull CoordinatorLayout rootView, @NonNull Button button0,
       @NonNull Button button1, @NonNull Button button2, @NonNull Button button3,
       @NonNull Button button4, @NonNull Button button5, @NonNull Button button6,
       @NonNull Button button7, @NonNull Button button8, @NonNull Button button9,
       @NonNull Button buttonAddition, @NonNull Button buttonBackspace, @NonNull Button buttonC,
       @NonNull Button buttonCe, @NonNull Button buttonComma, @NonNull Button buttonDivision,
-      @NonNull Button buttonEqual, @NonNull Button buttonFraction, @NonNull Button buttonMemoryAdd,
-      @NonNull Button buttonMemoryClear, @NonNull Button buttonMemoryRecall,
-      @NonNull Button buttonMemoryStore, @NonNull Button buttonMemorySubtract,
+      @NonNull Button buttonEqual, @NonNull Button buttonFraction,
       @NonNull Button buttonMultiplication, @NonNull Button buttonPercentage,
       @NonNull Button buttonPlusMinus, @NonNull Button buttonRoot, @NonNull Button buttonSquare,
-      @NonNull Button buttonSubtraction, @NonNull GridLayout gridLayout1,
-      @NonNull GridLayout gridLayout2, @NonNull Guideline guideline1, @NonNull Guideline guideline2,
-      @NonNull ImageButton menuItemHistory, @NonNull AppCompatTextView numberCurrent,
-      @NonNull TextView numberHistory, @NonNull TextView tv) {
+      @NonNull Button buttonSubtraction, @NonNull GridLayout gridLayout2,
+      @NonNull Guideline guideline2, @NonNull AppCompatTextView numberCurrent,
+      @NonNull AppCompatTextView numberHistory, @NonNull TextView tv) {
     this.rootView = rootView;
     this.button0 = button0;
     this.button1 = button1;
@@ -168,22 +140,14 @@ public final class FragmentKalkulatorBinding implements ViewBinding {
     this.buttonDivision = buttonDivision;
     this.buttonEqual = buttonEqual;
     this.buttonFraction = buttonFraction;
-    this.buttonMemoryAdd = buttonMemoryAdd;
-    this.buttonMemoryClear = buttonMemoryClear;
-    this.buttonMemoryRecall = buttonMemoryRecall;
-    this.buttonMemoryStore = buttonMemoryStore;
-    this.buttonMemorySubtract = buttonMemorySubtract;
     this.buttonMultiplication = buttonMultiplication;
     this.buttonPercentage = buttonPercentage;
     this.buttonPlusMinus = buttonPlusMinus;
     this.buttonRoot = buttonRoot;
     this.buttonSquare = buttonSquare;
     this.buttonSubtraction = buttonSubtraction;
-    this.gridLayout1 = gridLayout1;
     this.gridLayout2 = gridLayout2;
-    this.guideline1 = guideline1;
     this.guideline2 = guideline2;
-    this.menuItemHistory = menuItemHistory;
     this.numberCurrent = numberCurrent;
     this.numberHistory = numberHistory;
     this.tv = tv;
@@ -191,7 +155,7 @@ public final class FragmentKalkulatorBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -324,36 +288,6 @@ public final class FragmentKalkulatorBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button_memory_add;
-      Button buttonMemoryAdd = rootView.findViewById(id);
-      if (buttonMemoryAdd == null) {
-        break missingId;
-      }
-
-      id = R.id.button_memory_clear;
-      Button buttonMemoryClear = rootView.findViewById(id);
-      if (buttonMemoryClear == null) {
-        break missingId;
-      }
-
-      id = R.id.button_memory_recall;
-      Button buttonMemoryRecall = rootView.findViewById(id);
-      if (buttonMemoryRecall == null) {
-        break missingId;
-      }
-
-      id = R.id.button_memory_store;
-      Button buttonMemoryStore = rootView.findViewById(id);
-      if (buttonMemoryStore == null) {
-        break missingId;
-      }
-
-      id = R.id.button_memory_subtract;
-      Button buttonMemorySubtract = rootView.findViewById(id);
-      if (buttonMemorySubtract == null) {
-        break missingId;
-      }
-
       id = R.id.button_multiplication;
       Button buttonMultiplication = rootView.findViewById(id);
       if (buttonMultiplication == null) {
@@ -390,33 +324,15 @@ public final class FragmentKalkulatorBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.gridLayout1;
-      GridLayout gridLayout1 = rootView.findViewById(id);
-      if (gridLayout1 == null) {
-        break missingId;
-      }
-
       id = R.id.gridLayout2;
       GridLayout gridLayout2 = rootView.findViewById(id);
       if (gridLayout2 == null) {
         break missingId;
       }
 
-      id = R.id.guideline1;
-      Guideline guideline1 = rootView.findViewById(id);
-      if (guideline1 == null) {
-        break missingId;
-      }
-
       id = R.id.guideline2;
       Guideline guideline2 = rootView.findViewById(id);
       if (guideline2 == null) {
-        break missingId;
-      }
-
-      id = R.id.menu_item_history;
-      ImageButton menuItemHistory = rootView.findViewById(id);
-      if (menuItemHistory == null) {
         break missingId;
       }
 
@@ -427,7 +343,7 @@ public final class FragmentKalkulatorBinding implements ViewBinding {
       }
 
       id = R.id.number_history;
-      TextView numberHistory = rootView.findViewById(id);
+      AppCompatTextView numberHistory = rootView.findViewById(id);
       if (numberHistory == null) {
         break missingId;
       }
@@ -438,13 +354,12 @@ public final class FragmentKalkulatorBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentKalkulatorBinding((FrameLayout) rootView, button0, button1, button2,
+      return new FragmentKalkulatorBinding((CoordinatorLayout) rootView, button0, button1, button2,
           button3, button4, button5, button6, button7, button8, button9, buttonAddition,
           buttonBackspace, buttonC, buttonCe, buttonComma, buttonDivision, buttonEqual,
-          buttonFraction, buttonMemoryAdd, buttonMemoryClear, buttonMemoryRecall, buttonMemoryStore,
-          buttonMemorySubtract, buttonMultiplication, buttonPercentage, buttonPlusMinus, buttonRoot,
-          buttonSquare, buttonSubtraction, gridLayout1, gridLayout2, guideline1, guideline2,
-          menuItemHistory, numberCurrent, numberHistory, tv);
+          buttonFraction, buttonMultiplication, buttonPercentage, buttonPlusMinus, buttonRoot,
+          buttonSquare, buttonSubtraction, gridLayout2, guideline2, numberCurrent, numberHistory,
+          tv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

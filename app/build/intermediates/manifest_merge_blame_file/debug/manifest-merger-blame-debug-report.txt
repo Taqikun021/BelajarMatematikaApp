@@ -23,36 +23,35 @@
 16-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:9:9-54
 17        android:supportsRtl="true"
 17-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:10:9-35
-18        android:testOnly="true"
-19        android:theme="@style/Theme.Math" >
-19-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:11:9-42
-20        <activity
-20-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:13:9-15:68
-21            android:name="xyz.tqydn.math.MainActivity"
-21-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:14:13-41
-22            android:label="@string/title_activity_main" />
-22-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:15:13-56
-23        <activity android:name="xyz.tqydn.math.SplashScreenActivity" >
-23-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:16:9-22:20
-23-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:16:19-55
-24            <intent-filter>
-24-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:17:13-21:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:18:17-69
-25-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:18:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:20:17-77
-27-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:20:27-74
-28            </intent-filter>
-29        </activity>
-30
-31        <meta-data
-31-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:24:9-26:57
-32            android:name="preloaded_fonts"
-32-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:25:13-43
-33            android:resource="@array/preloaded_fonts" />
-33-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:26:13-54
-34    </application>
-35
-36</manifest>
+18        android:theme="@style/Theme.Math" >
+18-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:11:9-42
+19        <activity
+19-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:13:9-15:68
+20            android:name="xyz.tqydn.math.MainActivity"
+20-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:14:13-41
+21            android:label="@string/title_activity_main" />
+21-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:15:13-56
+22        <activity android:name="xyz.tqydn.math.SplashScreenActivity" >
+22-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:16:9-22:20
+22-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:16:19-55
+23            <intent-filter>
+23-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:17:13-21:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:18:17-69
+24-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:18:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:20:17-77
+26-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:20:27-74
+27            </intent-filter>
+28        </activity>
+29
+30        <meta-data
+30-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:24:9-26:57
+31            android:name="preloaded_fonts"
+31-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:25:13-43
+32            android:resource="@array/preloaded_fonts" />
+32-->/home/taqiyudin/AndroidStudioProjects/Math/app/src/main/AndroidManifest.xml:26:13-54
+33    </application>
+34
+35</manifest>

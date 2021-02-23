@@ -2,31 +2,25 @@ package xyz.tqydn.math
 
 import android.os.Bundle
 import android.view.*
-import androidx.fragment.app.Fragment
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import xyz.tqydn.math.databinding.FragmentKalkulatorBinding
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.text.ParseException
 import kotlin.math.sqrt
 
-@Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class KalkulatorFragment : Fragment() {
 
     private var isFutureOperationButtonClicked: Boolean = false
     private var isInstantOperationButtonClicked: Boolean = false
     private var isEqualButtonClicked: Boolean = false
-
-    private var currentNumber: Double = 0.0 // Value can be changed.
+    private var currentNumber: Double = 0.0
     private var currentResult: Double = 0.0
-    private var memory: Double = 0.0
-
-    private var historyText = "" // Recognize type of variable without declaring it.
+    private var historyText = ""
     private var historyInstantOperationText = ""
     private var historyActionList: ArrayList<String> = ArrayList()
-
     private var currentOperation = INIT
-
     private var _binding: FragmentKalkulatorBinding? = null
     private val binding get() = _binding!!
 
@@ -170,7 +164,7 @@ class KalkulatorFragment : Fragment() {
             Toast.makeText(requireContext(), historyAllText, Toast.LENGTH_LONG).show()
             historyActionList.add(historyAllText)
             historyText = StringBuilder().append(formatDoubleToString(currentResult)).toString()
-            binding.numberHistory.text = ""
+            binding.numberHistory.text = historyAllText
             isFutureOperationButtonClicked = false
             isEqualButtonClicked = true
         }
@@ -189,52 +183,6 @@ class KalkulatorFragment : Fragment() {
 
         binding.buttonFraction.setOnClickListener {
             onInstantOperationButtonClick(FRACTION)
-        }
-
-        binding.buttonMemoryClear.isEnabled = false
-        binding.buttonMemoryClear.setOnClickListener {
-            binding.buttonMemoryClear.isEnabled = false
-            binding.buttonMemoryRecall.isEnabled = false
-            memory = 0.0
-            Toast.makeText(requireContext(), getString(R.string.memory_cleared_toast), Toast.LENGTH_SHORT).show()
-        }
-
-        binding.buttonMemoryRecall.isEnabled = false
-        binding.buttonMemoryRecall.setOnClickListener {
-            clearEntry(memory)
-            Toast.makeText(requireContext(), getString(R.string.memory_recalled_toast), Toast.LENGTH_SHORT).show()
-        }
-
-        binding.buttonMemoryAdd.setOnClickListener {
-            binding.buttonMemoryClear.isEnabled = true
-            binding.buttonMemoryRecall.isEnabled = true
-            val currentValue = binding.numberCurrent.text.toString()
-            val thisOperationNumber = formatStringToDouble(currentValue)
-            val newMemory = memory + thisOperationNumber
-            Toast.makeText(requireContext(), getString(R.string.memory_added_toast) + "${formatDoubleToString(memory)} + ${formatDoubleToString(thisOperationNumber)} = ${formatDoubleToString(newMemory)}", Toast.LENGTH_LONG).show()
-            memory = newMemory
-        }
-
-        binding.buttonMemorySubtract.setOnClickListener {
-            binding.buttonMemoryClear.isEnabled = true
-            binding.buttonMemoryRecall.isEnabled = true
-            val currentValue = binding.numberCurrent.text.toString()
-            val thisOperationNumber = formatStringToDouble(currentValue)
-            val newMemory = memory - thisOperationNumber
-            Toast.makeText(requireContext(), getString(R.string.memory_subtracted_toast) + "${formatDoubleToString(memory)} - ${formatDoubleToString(thisOperationNumber)} = ${formatDoubleToString(newMemory)}", Toast.LENGTH_LONG).show()
-            memory = newMemory
-        }
-
-        binding.buttonMemoryStore.setOnClickListener {
-            val currentValue = binding.numberCurrent.text.toString()
-            memory = formatStringToDouble(currentValue)
-            binding.buttonMemoryClear.isEnabled = true
-            binding.buttonMemoryRecall.isEnabled = true
-            Toast.makeText(requireContext(), getString(R.string.memory_stored_toast) + formatDoubleToString(memory), Toast.LENGTH_SHORT).show()
-        }
-
-        binding.menuItemHistory.setOnClickListener {
-            HistoryActionListDialogFragment.newInstance(historyActionList).show(childFragmentManager, "dialog")
         }
     }
 
@@ -283,16 +231,12 @@ class KalkulatorFragment : Fragment() {
     }
 
     private fun onInstantOperationButtonClick(operation: String) {
-
         var currentValue = binding.numberCurrent.text.toString()
         var thisOperationNumber = formatStringToDouble(currentValue)
         currentValue = "(${formatDoubleToString(thisOperationNumber)})"
 
         when (operation) {
-            PERCENTAGE -> {
-                thisOperationNumber = (currentResult * thisOperationNumber) / 100
-                currentValue = formatDoubleToString(thisOperationNumber)
-            }
+            PERCENTAGE -> thisOperationNumber /= 100
             ROOT -> thisOperationNumber = thisOperationNumber.sqrt
             SQUARE -> thisOperationNumber *= thisOperationNumber
             FRACTION -> thisOperationNumber = 1 / thisOperationNumber
@@ -315,15 +259,12 @@ class KalkulatorFragment : Fragment() {
         }
 
         binding.numberCurrent.text = formatDoubleToString(thisOperationNumber)
-
         if (isEqualButtonClicked) currentResult = thisOperationNumber else currentNumber = thisOperationNumber
-
         isInstantOperationButtonClicked = true
         isFutureOperationButtonClicked = false
     }
 
     private fun calculateResult(): String {
-
         when (currentOperation) {
             INIT -> {
                 currentResult = currentNumber
@@ -360,6 +301,7 @@ class KalkulatorFragment : Fragment() {
         return useNumberFormat().format(number)
     }
 
+    @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
     private fun formatStringToDouble(number: String): Double {
         return useNumberFormat().parse(number).toDouble()
     }
@@ -384,7 +326,7 @@ class KalkulatorFragment : Fragment() {
         binding.numberCurrent.text = formatDoubleToString(newNumber)
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentKalkulatorBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -405,19 +347,15 @@ class KalkulatorFragment : Fragment() {
         private const val SEVEN = "7"
         private const val EIGHT = "8"
         private const val NINE = "9"
-
         private const val INIT = ""
-
         private const val ADDITION = " + "
         private const val SUBTRACTION = " − "
         private const val MULTIPLICATION = " × "
         private const val DIVISION = " ÷ "
-
         private const val PERCENTAGE = ""
         private const val ROOT = "√"
         private const val SQUARE = "sqr"
         private const val FRACTION = "1/"
-
         private const val NEGATE = "negate"
         private const val COMMA = ","
         private const val EQUAL = " = "
